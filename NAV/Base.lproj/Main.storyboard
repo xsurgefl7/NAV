@@ -24,53 +24,115 @@
             </objects>
             <point key="canvasLocation" x="193" y="-273"/>
         </scene>
-        <!--SecondViewController-->
+        <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="SecondViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="NAV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SecondViewController" id="BYZ-38-t0r" userLabel="ViewController" customClass="ViewController" customModule="NAV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXi-7k-Ora">
-                                <rect key="frame" x="343" y="55" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Account"/>
-                                <connections>
-                                    <segue destination="0kB-iB-jSX" kind="show" id="VjY-Py-bCq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gk-Fc-Pb9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gk-Fc-Pb9">
                                 <rect key="frame" x="21" y="738" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Want to join?"/>
                                 <connections>
+                                    <action selector="JoinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFD-ha-hn8"/>
                                     <segue destination="nGg-IJ-Fjw" kind="show" id="qHI-HQ-c1J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-vH-IOF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-vH-IOF">
                                 <rect key="frame" x="282" y="738" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Need a location?"/>
                                 <connections>
+                                    <action selector="locationbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x7m-1n-K3U"/>
                                     <segue destination="ImO-4Q-h5C" kind="show" id="CC0-QS-8tV"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome to the US Navy Navigator Main Page" translatesAutoresizingMaskIntoConstraints="NO" id="Ilf-qQ-Rb0">
-                                <rect key="frame" x="7" y="253" width="407" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Welcome to the US Navy Navigator Main Page" translatesAutoresizingMaskIntoConstraints="NO" id="Ilf-qQ-Rb0">
+                                <rect key="frame" x="1" y="168" width="407" height="132"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="2Lj-6O-5lS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXi-7k-Ora">
+                                <rect key="frame" x="337" y="74" width="57" height="30"/>
+                                <state key="normal" title="Account"/>
+                                <connections>
+                                    <action selector="AccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jlp-Kv-Lnl"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ttx-43-1Vj">
+                                <rect key="frame" x="290" y="120" width="0.0" height="0.0"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xR-Km-DXj">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="0.0"/>
+                                        <state key="normal" title="Checking"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIj-8y-3M0"/>
+                                            <segue destination="0kB-iB-jSX" kind="show" id="gHE-bj-p7k"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMJ-g1-Kqj">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="0.0"/>
+                                        <state key="normal" title="Accounts"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3E-tt-sKp"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6v-hh-O8f">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="0.0"/>
+                                        <state key="normal" title="Payments"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZ8-7u-pIa"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn9-ex-PuW">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="0.0"/>
+                                        <state key="normal" title="Retirement Plans"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fW-3R-Loh"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPY-zh-dg8">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="0.0"/>
+                                        <state key="normal" title="Addresses"/>
+                                        <connections>
+                                            <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6lj-JZ-u8H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KXi-7k-Ora" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7GP-Jl-AlU"/>
+                            <constraint firstItem="Ilf-qQ-Rb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="ClA-D3-Lwy"/>
+                            <constraint firstItem="2Gk-Fc-Pb9" firstAttribute="baseline" secondItem="sBz-vH-IOF" secondAttribute="baseline" id="OYx-TX-njj"/>
+                            <constraint firstItem="ttx-43-1Vj" firstAttribute="top" secondItem="KXi-7k-Ora" secondAttribute="bottom" constant="16" id="Qka-aC-zoB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ilf-qQ-Rb0" secondAttribute="trailing" constant="6" id="RTk-Zc-jxY"/>
+                            <constraint firstItem="Ilf-qQ-Rb0" firstAttribute="top" secondItem="ttx-43-1Vj" secondAttribute="bottom" constant="48" id="Yu0-qh-QSV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Gk-Fc-Pb9" secondAttribute="bottom" constant="94" id="cDq-DE-EaS"/>
+                            <constraint firstItem="ttx-43-1Vj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="290" id="lIc-RF-yOP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sBz-vH-IOF" secondAttribute="trailing" constant="17" id="m9N-Li-8Wo"/>
+                            <constraint firstItem="2Gk-Fc-Pb9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="u1K-TD-tiH"/>
+                            <constraint firstItem="KXi-7k-Ora" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uT1-dt-b6E"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="AccountOptionButtons" destination="9xR-Km-DXj" collectionClass="NSMutableArray" id="Ctg-eu-QbL"/>
+                        <outletCollection property="AccountOptionButtons" destination="AMJ-g1-Kqj" collectionClass="NSMutableArray" id="uzG-mS-YWF"/>
+                        <outletCollection property="AccountOptionButtons" destination="gn9-ex-PuW" collectionClass="NSMutableArray" id="yGP-Kj-WWP"/>
+                        <outletCollection property="AccountOptionButtons" destination="N6v-hh-O8f" collectionClass="NSMutableArray" id="5j4-am-kE9"/>
+                        <outletCollection property="AccountOptionButtons" destination="rPY-zh-dg8" collectionClass="NSMutableArray" id="aGa-h8-H0Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="-273"/>
+            <point key="canvasLocation" x="-743.47826086956525" y="-273.21428571428572"/>
         </scene>
         <!--Recruit-->
         <scene sceneID="kK1-HK-hVd">
