@@ -6,16 +6,22 @@
 //
 
 import UIKit
+import MapKit
 
 class location: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let centerLocation = CLLocationCoordinate2DMake(27.504331316, -97.80583011)
+        let mapSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let mapRegion = MKCoordinateRegion(center: centerLocation, span: mapSpan)
+        self.MapView.setRegion(mapRegion, animated: true)
+        
+        
     }
     
-
+    @IBOutlet weak var MapView: MKMapView!
+    
     /*
     // MARK: - Navigation
 
