@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import WebKit
 
 class Recruit: UIViewController {
 
+    @IBOutlet weak var WebView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
