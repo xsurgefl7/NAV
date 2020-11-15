@@ -14,10 +14,28 @@ class Recruit: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let myURL = URL(string: "https://www.navy.com/local?activity=1228857")
+        let myURLRequest = URLRequest(url: myURL!)
+        WebView.load(myURLRequest)
+        
     }
     
 
+    @IBAction func GoBack(_ sender: Any) {
+        if WebView.canGoBack{
+            WebView.goBack()
+        }
+    }
+    
+    @IBAction func GoFroward(_ sender: Any) {
+        if WebView.canGoForward{
+            WebView.goForward()
+        }
+    }
+    
+       @IBAction func Refresh(_ sender: Any) {
+        WebView.reload()
+    }
     /*
     // MARK: - Navigation
 
@@ -29,3 +47,4 @@ class Recruit: UIViewController {
     */
 
 }
+
