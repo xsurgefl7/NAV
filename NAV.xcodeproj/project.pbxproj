@@ -16,6 +16,8 @@
 		CD233041254F6AD400C70BF6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD233040254F6AD400C70BF6 /* Account.swift */; };
 		CD233044254F6AED00C70BF6 /* Recruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD233043254F6AED00C70BF6 /* Recruit.swift */; };
 		CD233047254F6B0000C70BF6 /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD233046254F6B0000C70BF6 /* location.swift */; };
+		CDF00CC925621E5F0003F96E /* Navy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF00CC825621E5F0003F96E /* Navy.jpg */; };
+		CDF00CCF256221580003F96E /* NavyBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF00CCE256221580003F96E /* NavyBlue.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CD233040254F6AD400C70BF6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		CD233043254F6AED00C70BF6 /* Recruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recruit.swift; sourceTree = "<group>"; };
 		CD233046254F6B0000C70BF6 /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		CDF00CC825621E5F0003F96E /* Navy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Navy.jpg; sourceTree = "<group>"; };
+		CDF00CCE256221580003F96E /* NavyBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavyBlue.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				CD233040254F6AD400C70BF6 /* Account.swift */,
 				CD233043254F6AED00C70BF6 /* Recruit.swift */,
 				CD233046254F6B0000C70BF6 /* location.swift */,
+				CDF00CCE256221580003F96E /* NavyBlue.png */,
+				CDF00CC825621E5F0003F96E /* Navy.jpg */,
 				CD233031254E531A00C70BF6 /* Main.storyboard */,
 				CD233034254E531F00C70BF6 /* Assets.xcassets */,
 				CD233036254E531F00C70BF6 /* LaunchScreen.storyboard */,
@@ -133,8 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF00CCF256221580003F96E /* NavyBlue.png in Resources */,
 				CD233038254E531F00C70BF6 /* LaunchScreen.storyboard in Resources */,
 				CD233035254E531F00C70BF6 /* Assets.xcassets in Resources */,
+				CDF00CC925621E5F0003F96E /* Navy.jpg in Resources */,
 				CD233033254E531A00C70BF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

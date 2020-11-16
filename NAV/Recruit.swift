@@ -14,7 +14,8 @@ class Recruit: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor (patternImage: UIImage( named:"NavyBlue.png")!);
+        
         let myURL = URL(string: "https://www.navy.com")
         let myURLRequest = URLRequest(url: myURL!)
         WebView.load(myURLRequest)

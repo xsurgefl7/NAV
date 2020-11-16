@@ -14,6 +14,7 @@ class location: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor (patternImage: UIImage( named:"NavyBlue.png")!);
         var centerLocation = CLLocationCoordinate2DMake(27.495298,-97.8209043)
         var mapSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         var mapRegion = MKCoordinateRegion(center: centerLocation, span: mapSpan)
