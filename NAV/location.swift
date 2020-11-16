@@ -10,26 +10,18 @@ import MapKit
 
 class location: UIViewController {
 
+    @IBOutlet weak var MapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let centerLocation = CLLocationCoordinate2DMake(27.504331316, -97.80583011)
-        let mapSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        let mapRegion = MKCoordinateRegion(center: centerLocation, span: mapSpan)
+        var centerLocation = CLLocationCoordinate2DMake(27.495298,-97.8209043)
+        var mapSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        var mapRegion = MKCoordinateRegion(center: centerLocation, span: mapSpan)
         self.MapView.setRegion(mapRegion, animated: true)
         
         
     }
     
-    @IBOutlet weak var MapView: MKMapView!
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -11,15 +11,18 @@ import WebKit
 class Recruit: UIViewController {
 
     @IBOutlet weak var WebView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myURL = URL(string: "https://www.navy.com/local?activity=1228857")
+        let myURL = URL(string: "https://www.navy.com")
         let myURLRequest = URLRequest(url: myURL!)
         WebView.load(myURLRequest)
         
     }
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
     @IBAction func GoBack(_ sender: Any) {
         if WebView.canGoBack{
