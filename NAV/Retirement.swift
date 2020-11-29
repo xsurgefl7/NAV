@@ -11,6 +11,8 @@ var list1 = ["$100.00", "$1,000.00"]
 
 class Retirement: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var myTableView2: UITableView!
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return(list1.count)

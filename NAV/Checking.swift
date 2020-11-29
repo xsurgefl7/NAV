@@ -11,6 +11,8 @@ var list = ["$1,200.00", "1,250.00"]
 
 class Checking: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var myTableView: UITableView!
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return(list.count)

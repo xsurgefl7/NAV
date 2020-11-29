@@ -11,6 +11,8 @@ var list3=["200.00"]
 
 class Payment: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var myTableView3: UITableView!
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return(list3.count)

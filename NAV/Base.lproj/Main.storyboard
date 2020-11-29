@@ -201,6 +201,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="hOE-nf-IZf"/>
+                    <connections>
+                        <outlet property="myTableView" destination="nNL-IM-Gn9" id="ugj-nf-dJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGM-Vi-uXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,6 +248,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="FV7-3Z-Br6"/>
+                    <connections>
+                        <outlet property="myTableView3" destination="ffx-f3-f6x" id="ICI-YK-vXg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Rd-cM-lHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -444,14 +450,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD0-0M-max">
-                                <rect key="frame" x="122" y="429" width="171" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="Lfv-qZ-dwx" eventType="touchUpInside" id="rbM-BR-kYq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS9-Gc-Wnn">
                                 <rect key="frame" x="122" y="634" width="171" height="56"/>
@@ -460,6 +461,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit3:" destination="Lfv-qZ-dwx" eventType="touchUpInside" id="rxZ-9h-pza"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add new amount to Retirement Account:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqn-zt-OqG">
                                 <rect key="frame" x="20" y="323" width="308" height="43"/>
@@ -468,11 +472,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD0-0M-max">
+                                <rect key="frame" x="122" y="439" width="171" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit2:" destination="Lfv-qZ-dwx" eventType="touchUpInside" id="36I-Ut-z81"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CAk-Rn-k52"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="tHI-mD-O9o"/>
+                    <connections>
+                        <outlet property="input" destination="2wt-3i-nKR" id="gMW-md-p43"/>
+                        <outlet property="input2" destination="mEa-Hl-cqO" id="A1l-SB-6BX"/>
+                        <outlet property="input3" destination="coL-oR-v3X" id="32Y-mR-Cga"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYk-mw-4fJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -517,6 +537,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zYH-Wv-JDx"/>
+                    <connections>
+                        <outlet property="myTableView2" destination="Wpf-mE-4bU" id="e62-zX-gUl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rL-ig-DnJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
