@@ -30,8 +30,7 @@ class ViewController: UIViewController {
         
         
     }
-    
-    
+  
     @IBAction func JoinButton(_ sender: Any) {
         
         
