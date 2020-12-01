@@ -203,6 +203,10 @@
                                         <accessibility key="accessibilityConfiguration" identifier="cell"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ieS-oP-Nki" id="ZyU-QJ-wyB"/>
+                                    <outlet property="delegate" destination="ieS-oP-Nki" id="zoT-bK-7tc"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xtu-Eg-loR"/>
@@ -251,6 +255,10 @@
                                         <accessibility key="accessibilityConfiguration" identifier="cell1"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="spz-H9-Vf7" id="rCc-J6-hJ7"/>
+                                    <outlet property="delegate" destination="spz-H9-Vf7" id="UUO-gP-amF"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GbW-ma-NEk"/>
@@ -539,6 +547,10 @@
                                         <accessibility key="accessibilityConfiguration" identifier="cell2"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Aus-m3-gNn" id="TZ8-i5-8ue"/>
+                                    <outlet property="delegate" destination="Aus-m3-gNn" id="7RJ-Oc-o7Z"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jcz-FS-x3j"/>
