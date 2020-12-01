@@ -7,7 +7,7 @@
 
 import UIKit
 
-var list3=["200.00"]
+var list3=["$200.00"]
 
 class Payment: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -20,7 +20,7 @@ class Payment: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let tablecell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        let tablecell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell1")
         
         tablecell.textLabel?.text = list3[indexPath.row]
         

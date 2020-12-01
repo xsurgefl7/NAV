@@ -7,7 +7,7 @@
 
 import UIKit
 
-var list1 = ["$100.00", "$1,000.00"]
+var list1 = ["-$100.00", "+$1,000.00"]
 
 class Retirement: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -20,7 +20,7 @@ class Retirement: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let tablecell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        let tablecell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell2")
         
         tablecell.textLabel?.text = list1[indexPath.row]
         

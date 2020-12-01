@@ -7,7 +7,7 @@
 
 import UIKit
 
-var list = ["$1,200.00", "1,250.00"]
+var list = ["+$1,200.00", "+1,250.00", "-$100.00"]
 
 class Checking: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
